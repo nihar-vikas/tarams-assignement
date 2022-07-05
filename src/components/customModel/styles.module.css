@@ -1,0 +1,85 @@
+.customModelMain {
+    height: 100%;
+    width: 100%;
+}
+
+.backgroundBackDrop {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.4);
+    top:0;
+    left:0;
+}
+
+.customModelContentMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    min-width: 95%;
+    min-height: auto;
+    overflow: auto;
+    border-radius: 5px;
+    z-index: 100;
+    /* animation: anvil 1s ease; */
+}
+
+@keyframes anvil {
+    0% {
+      transform: scale(5) rotate(0);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    50% {
+      transform: scale(1) rotate(-0.2deg);
+      opacity: 1;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+    }
+    75% {
+      transform: scale(1) rotate(0.2deg);
+      opacity: 1;
+      box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+      opacity: 1;
+      box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+  }
+
+.customModelHeader {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 10px;
+}
+
+.customModelTitle {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.customModelCloseBtn {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #6f6f6f;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 5px 5px 2px 5px;
+}
+
+@media (min-width: 1025px) {
+ .customModelContentMain {
+  min-width: 20rem;
+  min-height: 20rem;
+ } 
+}

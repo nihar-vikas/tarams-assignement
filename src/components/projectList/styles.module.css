@@ -1,0 +1,205 @@
+.projectListMain {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectListBody {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow:  0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.projectListHeader {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);   
+}
+
+.projectListTitle {
+    margin: 0;
+    padding: 0;
+    color: #1d1d1d;
+    font-size: 20px;
+}
+
+.projectListTableMain {
+    height: 100%;
+    overflow: auto;
+}
+.projectListTableBody {
+    height: 24.5rem;
+    overflow: auto;
+}
+
+.projectListTable {
+    width: 100%;
+    text-align: left;
+}
+
+.projectListHeaderTableRow {
+    background-color: rgb(228, 228, 228);
+    padding: 0px 1rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.projectListItem {
+    width: 10rem;
+}
+
+.projectListStatusIcon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(206, 40, 40);
+    margin-right: 5px;
+}
+
+.completed {
+    background-color: rgb(11, 175, 11);
+}
+
+.projectListStatusBar {
+    width: 70%;
+    height: 5px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.projectListStatusBarChild {
+    height: 5px;
+    border-radius: 10px;
+    background-color: #f44335;
+}
+
+.bgRed {
+    background-color: #f44335;
+}
+
+.bgBlue {
+    background-color:#2296f3;
+}
+
+.bgGreen {
+    background-color:#4caf50;
+}
+
+.bgYellow {
+    background-color:#e6b319;
+}
+
+.projectListImageDiv {
+    display:flex;
+    align-items: center;
+}
+.projectListNameDiv {
+    margin: 0;
+    padding-left: 1rem;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.projectListBodyTableRow {
+    min-height: 3rem;
+    padding: 0px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    flex-grow: 1;
+}
+
+.projectListBodyTableRow:hover {
+    background-color:aliceblue;
+    color: #FFFFFF;
+    background: #287ae6;
+    box-shadow:  0 1px 1px 0 rgba(66, 133, 244, 0.45),0 1px 3px 1px rgba(66, 133, 244, 0.3);;
+    transition: 250ms;
+}
+
+.projectListHeadItem {
+    font-size: 14px;
+    font-weight: 600;
+    color: #858585;
+    text-transform: uppercase;
+}
+
+.projectListEditButton {
+    outline:none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.projectListEditButton:hover {
+    background-color: rgb(213, 233, 251);
+    border-radius: 50%;
+    padding: 4px 5px;
+}
+
+.textAlign {
+    display: flex;
+    align-items: center;
+}
+
+.tablePagination {
+    padding: 1rem;
+    padding-top: .5rem;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+.tablePaginationContent {
+    display: flex;
+    align-items: center;
+}
+.paginationButtons {
+    margin-left: .3rem;
+    margin-right: .3rem;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ecedef;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #838383;
+}
+
+.highlight {
+    background-color: #3772d1;
+    color: #fff;
+}
+
+.userImageList {
+    display: flex;
+    align-items: center;
+}
+.userIconDiv {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -14px;
+}
+
+@media (min-width: 1025px) {
+    .projectListMain {
+        padding: 2rem 10rem;
+    }
+    .projectListItem {
+        width: 100%;
+    }
+}

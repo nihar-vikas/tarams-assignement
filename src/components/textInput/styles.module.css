@@ -1,0 +1,41 @@
+.textInputMainDiv {
+    display: inline;
+    width: 100%;
+}
+
+.inputBox {
+    width: 95%;
+    display: block;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 5px;
+    padding:16.5px 0px 16.5px 14px;
+}
+
+.textInputTitle {
+    padding-left: 3px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.onError {
+    border: 1px solid #f44335;
+}
+
+.errorMessage {
+    color: #f44335;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
